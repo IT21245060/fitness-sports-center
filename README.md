@@ -2,6 +2,10 @@
 
 Simple responsive website starter for the Fitness Sports Center project.
 
+## Figma Design
+
+- https://www.figma.com/design/yvDdfzPfyNFL9aFqMSNNfe/Untitled?node-id=0-1&t=JXtBJ9CQfZiF7Sm0-1
+
 ## Run locally
 
 Open `index.html` in a browser.
