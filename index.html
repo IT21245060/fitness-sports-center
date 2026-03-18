@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fitness Sports Center</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -85,7 +85,7 @@
 
           <!-- Right column -->
           <div class="about-right">
-            <p class="section-eyebrow">ABOUT US</p>
+            <p class="about-eyebrow">ABOUT US</p>
             <h2 class="about-title">More Than Just<br />A Gym</h2>
             <p class="about-desc">
               We are more than iron and sweat. Fitness Sports Center was founded
@@ -346,37 +346,6 @@
       </div>
     </footer>
 
-    <script>
-      // Contact form handler
-      document.getElementById("contactForm").addEventListener("submit", function (e) {
-        e.preventDefault();
-        const btn = this.querySelector(".btn-submit");
-        btn.textContent = "Message Sent!";
-        btn.style.background = "#22c55e";
-        setTimeout(() => {
-          btn.textContent = "Send Message";
-          btn.style.background = "";
-          this.reset();
-        }, 3000);
-      });
-
-      // Smooth scroll for nav links
-      document.querySelectorAll('a[href^="#"]').forEach((link) => {
-        link.addEventListener("click", function (e) {
-          const href = this.getAttribute("href");
-          if (!href || href.length <= 1) return;
-          const target = document.querySelector(href);
-          if (target) {
-            e.preventDefault();
-            target.scrollIntoView({ behavior: "smooth" });
-          }
-        });
-      });
-
-      // Mobile nav toggle
-      document.getElementById("navToggle").addEventListener("click", function () {
-        document.getElementById("mainNav").classList.toggle("open");
-      });
-    </script>
+    <script src="assets/js/main.js" defer></script>
   </body>
 </html>

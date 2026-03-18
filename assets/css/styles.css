@@ -1,6 +1,7 @@
 /* ===================================================
-   Fitness Sports Center — Global Styles
+   Fitness Sports Center — styles.css
    Theme: dark black/brown + golden yellow
+   Path: assets/css/styles.css
 =================================================== */
 
 :root {
@@ -269,6 +270,7 @@ nav a:hover {
 
 /* ===================================================
    About Section
+   — underlines on heading / desc / list match Figma
 =================================================== */
 .about-section {
   background: var(--bg-alt);
@@ -322,21 +324,38 @@ nav a:hover {
   padding-top: 1rem;
 }
 
+/* "ABOUT US" label with underline — matches Figma */
+.about-eyebrow {
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* Large heading with underline — matches Figma */
 .about-title {
   font-size: clamp(1.8rem, 3vw, 2.6rem);
   font-weight: 800;
   line-height: 1.2;
-  margin-bottom: 1.2rem;
-  padding-bottom: 0.3rem;
-  border-bottom: 3px solid var(--text);
-  display: inline-block;
+  margin-bottom: 1.4rem;
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }
 
+/* Body copy bold + underline — matches Figma */
 .about-desc {
   color: var(--text);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.97rem;
+  line-height: 1.65;
   margin-bottom: 1.5rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .about-list {
@@ -345,19 +364,25 @@ nav a:hover {
   gap: 0.5rem;
 }
 
+/* List items bold + underline — matches Figma */
 .about-list li {
   color: var(--text);
   font-weight: 700;
   font-size: 0.97rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .about-list li::before {
   content: "-";
   margin-right: 0.3rem;
+  text-decoration: none;
+  display: inline-block;
 }
 
 /* ===================================================
    Services Section
+   — large icon area matching Figma card layout
 =================================================== */
 .services-section {
   background: var(--bg);
@@ -372,7 +397,7 @@ nav a:hover {
 .service-card {
   background: var(--surface);
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 1.4rem;
   transition: background 0.2s;
 }
 
@@ -380,17 +405,18 @@ nav a:hover {
   background: var(--surface-hover);
 }
 
+/* Large icon box — matches Figma's prominent icon area */
 .service-icon-wrap {
   background: var(--accent);
   color: var(--text-dark);
-  width: 60px;
-  height: 60px;
-  border-radius: 10px;
+  width: 90px;
+  height: 90px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  margin-bottom: 1.1rem;
 }
 
 .service-name {
@@ -615,7 +641,6 @@ nav a:hover {
 .contact-form-wrap {
   display: flex;
   flex-direction: column;
-  gap: 0;
 }
 
 .form-title {
@@ -657,7 +682,7 @@ nav a:hover {
 
 .form-textarea {
   resize: vertical;
-  min-height: 130px;
+  min-height: 140px;
 }
 
 .btn-submit {
