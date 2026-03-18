@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      // Launch index.html directly in Chrome for debugging.
+      // Requires the "Debugger for Chrome" / built-in JS Debugger in VS Code.
+      "name": "Open in Chrome",
+      "type": "chrome",
+      "request": "launch",
+      "file": "${workspaceFolder}/index.html"
+    },
+    {
+      // Same but with Live Server already running on port 5500.
+      // Start Live Server first ("Go Live"), then run this config to attach.
+      "name": "Attach to Live Server (port 5500)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://127.0.0.1:5500/index.html",
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  // Extensions VS Code will prompt you to install when you open this workspace.
+  // Accept the prompt (or run "Extensions: Show Recommended Extensions") and
+  // install "Live Server" to get one-click preview with hot-reload.
+  "recommendations": [
+    "ritwickdey.liveserver"
+  ]
+}

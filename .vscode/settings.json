@@ -1,0 +1,9 @@
+{
+  // Live Server — "Go Live" button / right-click → Open with Live Server
+  "liveServer.settings.root": "/",
+  "liveServer.settings.file": "index.html",
+  "liveServer.settings.port": 5500,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": false,
+  "liveServer.settings.CustomBrowser": "chrome"
+}
