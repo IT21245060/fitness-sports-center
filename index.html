@@ -5,110 +5,378 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fitness Sports Center</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
+    <!-- ===== Navigation ===== -->
     <header class="site-header">
       <div class="container nav">
-        <h1 class="logo">Fitness Sports Center</h1>
-        <nav>
-          <a href="#programs">Programs</a>
-          <a href="#trainers">Trainers</a>
-          <a href="#membership">Membership</a>
+        <div class="logo-wrap">
+          <div class="logo-emblem">
+            <i class="fas fa-dumbbell"></i>
+          </div>
+          <span class="logo-text">FITNESS<br /><span class="logo-sub">SPORTS CENTER</span></span>
+        </div>
+        <nav id="mainNav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#plans">Plans</a>
           <a href="#contact">Contact</a>
         </nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <a class="btn-join" href="#plans">Join Now</a>
       </div>
     </header>
 
     <main>
-      <section class="hero">
+      <!-- ===== Hero ===== -->
+      <section id="home" class="hero">
+        <div class="hero-overlay"></div>
         <div class="container hero-content">
           <p class="eyebrow">Train. Perform. Repeat.</p>
-          <h2>Reach your peak with expert coaching and modern facilities.</h2>
-          <p>
-            Strength training, group classes, and sports-focused programs designed
-            for all fitness levels.
+          <h1>Reach Your Peak<br />With Expert Coaching</h1>
+          <p class="hero-sub">
+            Strength training, group classes, and sports-focused programs
+            designed for all fitness levels.
           </p>
-          <a class="cta" href="#membership">Join Now</a>
+          <div class="hero-actions">
+            <a class="btn-primary" href="#plans">Get Started</a>
+            <a class="btn-outline" href="#about">Learn More</a>
+          </div>
         </div>
       </section>
 
-      <section id="programs" class="section">
+      <!-- ===== About ===== -->
+      <section id="about" class="section about-section">
+        <div class="container about-grid">
+          <!-- Left column -->
+          <div class="about-left">
+            <div class="stats-row">
+              <div class="stat">
+                <span class="stat-num">500+</span>
+                <span class="stat-label">Members</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">15+</span>
+                <span class="stat-label">Trainers</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">50+</span>
+                <span class="stat-label">Equipment</span>
+              </div>
+            </div>
+            <div class="about-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80"
+                alt="Fitness Sports Center gym floor"
+                class="about-img"
+              />
+            </div>
+          </div>
+
+          <!-- Right column -->
+          <div class="about-right">
+            <p class="section-eyebrow">ABOUT US</p>
+            <h2 class="about-title">More Than Just<br />A Gym</h2>
+            <p class="about-desc">
+              We are more than iron and sweat. Fitness Sports Center was founded
+              in 2023 with one mission — to build champions. Whether you're a
+              beginner or a pro, our world-class facility and expert coaches will
+              push you beyond your limits.
+            </p>
+            <ul class="about-list">
+              <li>Expert certified trainers</li>
+              <li>State-of-the-art equipment</li>
+              <li>Flexible membership options</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Services ===== -->
+      <section id="services" class="section services-section">
         <div class="container">
-          <h3>Our Programs</h3>
-          <div class="grid three">
-            <article class="card">
-              <h4>Strength & Conditioning</h4>
-              <p>Build power, stamina, and athletic performance with guided plans.</p>
+          <div class="section-header">
+            <p class="section-eyebrow">What we offer</p>
+            <h2 class="section-title">Our Services</h2>
+          </div>
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="service-icon-wrap">
+                <i class="fas fa-dumbbell"></i>
+              </div>
+              <h3 class="service-name">Weight Training</h3>
+              <p class="service-desc">
+                Build muscle and strength with our comprehensive weight training
+                programs.
+              </p>
             </article>
-            <article class="card">
-              <h4>Cardio & Endurance</h4>
-              <p>Boost heart health and endurance with structured cardio sessions.</p>
+            <article class="service-card">
+              <div class="service-icon-wrap">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h3 class="service-name">Cardio Zone</h3>
+              <p class="service-desc">
+                State-of-the-art cardio equipment to boost your endurance and
+                burn calories.
+              </p>
             </article>
-            <article class="card">
-              <h4>Sports Skills</h4>
-              <p>Specialized drills for agility, speed, coordination, and control.</p>
+            <article class="service-card">
+              <div class="service-icon-wrap">
+                <i class="fas fa-shoe-prints"></i>
+              </div>
+              <h3 class="service-name">Personal Coaching</h3>
+              <p class="service-desc">
+                One-on-one training sessions tailored to your specific fitness
+                goals.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon-wrap">
+                <i class="fas fa-users"></i>
+              </div>
+              <h3 class="service-name">Group Classes</h3>
+              <p class="service-desc">
+                High-energy group workouts including HIIT, boxing, and yoga
+                sessions.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon-wrap">
+                <i class="fas fa-apple-alt"></i>
+              </div>
+              <h3 class="service-name">Nutrition Plans</h3>
+              <p class="service-desc">
+                Custom meal plans designed by certified nutritionists to fuel
+                your progress.
+              </p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon-wrap">
+                <i class="fas fa-star"></i>
+              </div>
+              <h3 class="service-name">Recovery &amp; Spa</h3>
+              <p class="service-desc">
+                Premium recovery facilities including sauna, massage, and ice
+                baths.
+              </p>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="trainers" class="section muted">
+      <!-- ===== Membership Plans ===== -->
+      <section id="plans" class="section plans-section">
         <div class="container">
-          <h3>Meet Our Trainers</h3>
-          <div class="grid three">
-            <article class="card">
-              <h4>Amanda Lee</h4>
-              <p>Certified strength coach focused on mobility and lifting technique.</p>
+          <div class="section-header">
+            <p class="section-eyebrow plans-eyebrow">MEMBERSHIP &nbsp; PLANS</p>
+            <h2 class="section-title">Choose Your Plan</h2>
+          </div>
+          <div class="plans-grid">
+            <!-- Basic -->
+            <article class="plan-card">
+              <h3 class="plan-name">Basic</h3>
+              <div class="plan-price">
+                <span class="price-num">$29</span
+                ><span class="price-period">/month</span>
+              </div>
+              <hr class="plan-divider" />
+              <ul class="plan-features">
+                <li>Access to gym floor</li>
+                <li>Locker room access</li>
+                <li>2 group classes/week</li>
+                <li>Basic fitness assessment</li>
+              </ul>
+              <a href="#contact" class="btn-plan">Get Started</a>
             </article>
-            <article class="card">
-              <h4>Marcus Silva</h4>
-              <p>Former athlete helping members improve speed and game performance.</p>
+
+            <!-- Pro (featured) -->
+            <article class="plan-card plan-featured">
+              <div class="plan-badge">Most Popular</div>
+              <h3 class="plan-name">Pro</h3>
+              <div class="plan-price">
+                <span class="price-num">$59</span
+                ><span class="price-period">/month</span>
+              </div>
+              <hr class="plan-divider plan-divider-dark" />
+              <ul class="plan-features plan-features-dark">
+                <li>Access to gym floor</li>
+                <li>Locker room access</li>
+                <li>2 group classes/week</li>
+                <li>Basic fitness assessment</li>
+                <li>Unlimited group classes</li>
+                <li>1 personal training session/week</li>
+                <li>Nutrition consultation</li>
+                <li>Priority booking</li>
+              </ul>
+              <a href="#contact" class="btn-plan btn-plan-dark">Get Started</a>
             </article>
-            <article class="card">
-              <h4>Nina Brooks</h4>
-              <p>Group fitness specialist for HIIT, cardio, and fat-loss programs.</p>
+
+            <!-- Elite -->
+            <article class="plan-card">
+              <h3 class="plan-name">Elite</h3>
+              <div class="plan-price">
+                <span class="price-num">$99</span
+                ><span class="price-period">/month</span>
+              </div>
+              <hr class="plan-divider" />
+              <ul class="plan-features">
+                <li>All Pro features</li>
+                <li>Unlimited personal training</li>
+                <li>Dedicated locker</li>
+                <li>Spa &amp; recovery access</li>
+                <li>24/7 gym access</li>
+                <li>Guest passes (2/month)</li>
+                <li>Private training sessions</li>
+                <li>Premium supplements discount</li>
+              </ul>
+              <a href="#contact" class="btn-plan">Get Started</a>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="membership" class="section">
+      <!-- ===== Contact ===== -->
+      <section id="contact" class="section contact-section">
         <div class="container">
-          <h3>Membership Plans</h3>
-          <div class="grid three">
-            <article class="card plan">
-              <h4>Basic</h4>
-              <p class="price">$29/mo</p>
-              <p>Gym floor access and locker room facilities.</p>
-            </article>
-            <article class="card plan featured">
-              <h4>Pro</h4>
-              <p class="price">$49/mo</p>
-              <p>All classes, gym access, and one monthly trainer session.</p>
-            </article>
-            <article class="card plan">
-              <h4>Elite</h4>
-              <p class="price">$79/mo</p>
-              <p>Unlimited classes and weekly one-on-one training.</p>
-            </article>
+          <div class="section-header">
+            <p class="section-eyebrow">Contact Us</p>
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="title-underline"></div>
           </div>
-        </div>
-      </section>
+          <div class="contact-grid">
+            <!-- Info + Map -->
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon-wrap">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-text">
+                  <p>123 Fitness Street</p>
+                  <p>Colombo, Sri Lanka</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon-wrap">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-text">
+                  <a href="tel:+94112345678" class="contact-link"
+                    >+94 11 234 5678</a
+                  >
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon-wrap">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-text">
+                  <p>hello@fitnesssportscenter.lk</p>
+                </div>
+              </div>
+              <div class="map-placeholder">
+                <span>Find Us Here</span>
+              </div>
+            </div>
 
-      <section id="contact" class="section muted">
-        <div class="container">
-          <h3>Contact Us</h3>
-          <p>Email: info@fitnesssportscenter.com</p>
-          <p>Phone: +1 (555) 123-4567</p>
-          <p>Address: 123 Performance Ave, Your City</p>
+            <!-- Form -->
+            <div class="contact-form-wrap">
+              <h3 class="form-title">Send Us A Message</h3>
+              <form class="contact-form" id="contactForm" novalidate>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  class="form-input"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  class="form-input"
+                  required
+                />
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  class="form-textarea"
+                  rows="6"
+                  required
+                ></textarea>
+                <button type="submit" class="btn-submit">Send Message</button>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
+    <!-- ===== Footer ===== -->
     <footer class="site-footer">
-      <div class="container">
-        <p>© 2026 Fitness Sports Center. All rights reserved.</p>
+      <div class="container footer-inner">
+        <div class="footer-logo">
+          <div class="footer-emblem">
+            <i class="fas fa-dumbbell"></i>
+          </div>
+        </div>
+        <p class="footer-copy">
+          &copy; 2023 Fitness Sports Center. All rights reserved.
+        </p>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="social-link" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="social-link" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
       </div>
     </footer>
+
+    <script>
+      // Contact form handler
+      document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        const btn = this.querySelector(".btn-submit");
+        btn.textContent = "Message Sent!";
+        btn.style.background = "#22c55e";
+        setTimeout(() => {
+          btn.textContent = "Send Message";
+          btn.style.background = "";
+          this.reset();
+        }, 3000);
+      });
+
+      // Smooth scroll for nav links
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener("click", function (e) {
+          const href = this.getAttribute("href");
+          if (!href || href.length <= 1) return;
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      });
+
+      // Mobile nav toggle
+      document.getElementById("navToggle").addEventListener("click", function () {
+        document.getElementById("mainNav").classList.toggle("open");
+      });
+    </script>
   </body>
 </html>
