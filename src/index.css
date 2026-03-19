@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Barlow', sans-serif;
+    background-color: #080808;
+    color: #F2EFE4;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .font-display { font-family: 'Bebas Neue', sans-serif; }
+
+  /* Scroll reveal */
+  .reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .reveal-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* Gold gradient text */
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #E8B820, #C99A10);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Section label style */
+  .section-label {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #C99A10;
+  }
+
+  /* Gold divider line */
+  .gold-line {
+    width: 60px;
+    height: 3px;
+    background: #C99A10;
+    margin: 12px auto 0;
+  }
+  .gold-line-left {
+    width: 60px;
+    height: 3px;
+    background: #C99A10;
+    margin: 12px 0 0;
+  }
+
+  /* Btn primary */
+  .btn-primary {
+    background: #C99A10;
+    color: #080808;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    padding: 14px 32px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    display: inline-block;
+  }
+  .btn-primary:hover {
+    background: #E8B820;
+    transform: translateY(-2px);
+  }
+
+  /* Btn outline */
+  .btn-outline {
+    background: transparent;
+    color: #C99A10;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    padding: 13px 32px;
+    border-radius: 8px;
+    border: 2px solid #C99A10;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, transform 0.15s;
+    display: inline-block;
+  }
+  .btn-outline:hover {
+    background: #C99A10;
+    color: #080808;
+    transform: translateY(-2px);
+  }
+}
+
+/* Noise texture overlay for depth */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.025;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Dark mode overrides */
+.dark body {
+  background-color: #080808;
+}
+.light body {
+  background-color: #1a1a1a;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #080808; }
+::-webkit-scrollbar-thumb { background: #C99A10; border-radius: 3px; }
