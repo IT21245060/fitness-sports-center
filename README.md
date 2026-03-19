@@ -4,7 +4,7 @@ A responsive promotional website for **Fitness Sports Center** — a modern gym 
 
 ## Live Links
 
-- **Live Demo:** [Add your Vercel/Netlify link here]
+- **Live Demo:** [fitness-sports-center-ebon.vercel.app](https://fitness-sports-center-ebon.vercel.app/)
 - **Figma Design (Original):** [View the original website design](https://www.figma.com/design/yvDdfzPfyNFL9aFqMSNNfe/Untitled?node-id=0-1&t=dVzgndoYPasfMuJ1-1)
 - **GitHub Repo:** [fitness-sports-center](https://github.com/IT21245060/fitness-sports-center)
 
