@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Services from './components/Services'
 import Plans from './components/Plans'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
 import useScrollReveal from './hooks/useScrollReveal'
 
@@ -26,6 +27,7 @@ export default function App() {
         <About />
         <Services />
         <Plans />
+        <Contact />
       </main>
       <Footer />
     </div>
