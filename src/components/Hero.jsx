@@ -23,7 +23,7 @@ export default function Hero() {
       <div className="absolute bottom-0 left-0 w-full h-px bg-gold/40" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-10 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-80px)] py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-80px)] py-10 lg:py-12">
 
           {/* Left: Text Content */}
           <div className="flex flex-col gap-6">
@@ -97,10 +97,10 @@ export default function Hero() {
 
           {/* Right: Logo Image */}
           <div
-            className="flex items-center justify-center reveal-right"
+            className="flex items-center lg:items-start justify-center reveal-right"
             style={{ transitionDelay: '0.2s' }}
           >
-            <div className="relative">
+            <div className="relative w-full flex justify-center lg:-translate-y-6">
               {/* Glow effect behind logo */}
               <div
                 className="absolute inset-0 rounded-2xl blur-3xl opacity-20"
@@ -109,7 +109,7 @@ export default function Hero() {
               <img
                 src="/logo.png"
                 alt="Fitness Sports Center"
-                className="relative z-10 w-full max-w-sm lg:max-w-md xl:max-w-lg object-contain drop-shadow-2xl"
+                className="relative z-10 w-full max-w-xs sm:max-w-sm lg:max-w-md xl:max-w-lg max-h-[58vh] sm:max-h-[62vh] lg:max-h-[72vh] object-contain drop-shadow-2xl"
                 onError={(e) => {
                   // Fallback placeholder if image not found
                   e.target.style.display = 'none'
