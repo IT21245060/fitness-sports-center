@@ -100,7 +100,7 @@ export default function Hero() {
             className="flex items-center lg:items-start justify-center reveal-right"
             style={{ transitionDelay: '0.2s' }}
           >
-            <div className="relative w-full flex justify-center lg:-translate-y-6">
+            <div className="relative w-full flex justify-center lg:-translate-y-[8.5rem] xl:-translate-y-[11rem]">
               {/* Glow effect behind logo */}
               <div
                 className="absolute inset-0 rounded-2xl blur-3xl opacity-20"
